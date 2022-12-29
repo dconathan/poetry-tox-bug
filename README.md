@@ -2,8 +2,6 @@ This is a minimal package to reproduce a bug I am seeing with poetry, tox and ov
 
 To reproduce:
 
-(tox.ini)
-
 ```shell
 python3 -m venv .venv
 ./.venv/bin/python -m pip install tox
