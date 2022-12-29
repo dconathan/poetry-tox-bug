@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "poetry-tox-bug"
+version = "0.1.0"
+description = "Minimal reproduction of a bug with poetry and tox"
+authors = ["Your Name <you@example.com>"]
+packages = [{include = "main.py", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+filelock = {version = "^3.9.0", optional = true }
+
+
+[tool.poetry.group.dev.dependencies]
+tox = "^4.1.0"
+
+[tool.poetry.extras]
+extras1 = ["filelock"]
+extras2 = ["filelock"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
