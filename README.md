@@ -17,3 +17,8 @@ pip._vendor.packaging.markers.InvalidMarker: Invalid marker: 'or extra == "extra
 ### Update
 
 This bug was fixed in [tox 4.1.2](https://github.com/tox-dev/tox/releases/tag/4.1.2) via [#2792](https://github.com/tox-dev/tox/pull/2792)
+
+### Update #2
+
+Still seeing this bug in `tox==4.1.3` when dependencies fall into >2 groups.  Minimal example has been updated.
+
